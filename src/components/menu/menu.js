@@ -48,8 +48,8 @@ class Menu extends react.Component {
         return(
             <div className="menu">
                 {
-                    this.state.sections.map(({ title, imageUrl, id, size })=>(
-                        <MenuItem key={id} title={title} imgURL={imageUrl} size={size}/>
+                    this.state.sections.map(({ imageUrl, id, ...otherSectionProps })=>(
+                        <MenuItem key={id} imgURL={imageUrl} {...otherSectionProps}/>
                     ))
                 }
             </div>
