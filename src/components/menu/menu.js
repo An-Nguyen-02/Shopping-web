@@ -1,4 +1,3 @@
-import react from "react";
 import MenuItem from "../menu-item/menu-item.js";
 import "./menu.scss";
 import { connect } from "react-redux";

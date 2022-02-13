@@ -1,4 +1,3 @@
-import react from "react";
 import "./collection-preview.scss";
 import CollectionItem from "../collection-item/collection-item.js";
 

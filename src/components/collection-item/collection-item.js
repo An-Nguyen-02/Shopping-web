@@ -1,4 +1,3 @@
-import react from "react";
 import "./collection-item.scss";
 import CustomButton from "../custom-button/custom-button";
 import { connect } from "react-redux";
