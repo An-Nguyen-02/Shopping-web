@@ -1,11 +1,18 @@
-import "./Homepage.scss";
+//import "./Homepage.scss";
 import Menu from "../../components/menu/menu.js";
+import { HomePageContainer } from "./Homepage-styles";
 
 const Homepage = () => {
   return (
-    <div className="homepage">
+    // Using css
+    // <div className="homepage">
+    //   <Menu />
+    // </div>
+
+    //using Styled components
+    <HomePageContainer>
       <Menu />
-    </div>
+    </HomePageContainer>
   );
 };
 
