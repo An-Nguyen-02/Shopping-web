@@ -2,7 +2,6 @@ import "./header.scss";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
 import { ReactComponent as Logo } from "../../assets/logo.svg";
-import { auth } from "../../firebase/firebase.util.js";
 import CartIcon from "../cart-icon/cart-icon.component";
 import CartDropdown from "../cart-dropdown/cart-dropdown.component";
 import { createStructuredSelector } from "reselect";

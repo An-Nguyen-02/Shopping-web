@@ -11,15 +11,9 @@ import { createStructuredSelector } from "reselect";
 import CheckOutPage from "../pages/Checkout/checkout.component";
 import { checkUserSession } from "../redux/user/user.actions";
 class App extends react.Component {
-  unsubcribeFromAuth = null;
-
   componentDidMount() {
     const { checkUserSession } = this.props;
     checkUserSession();
-  }
-
-  componentWillUnmount() {
-    this.unsubcribeFromAuth();
   }
 
   render() {
