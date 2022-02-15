@@ -1,7 +1,6 @@
 import firebase from "firebase/compat/app";
 import "firebase/compat/firestore";
 import "firebase/compat/auth";
-
 const config = {
   apiKey: "AIzaSyBd6sHkMl9_UM5A5aZ8Agh1vWmTXRk1jGw",
   authDomain: "shopping-web-db.firebaseapp.com",
@@ -60,7 +59,14 @@ export const convertCollectionsSnapshotToMap = (collections) => {
     return accumulator;
   }, {});
 };
-
+export const getCurrentUser = () => {
+  return new Promise((resolve, reject) => {
+    const unsubcribe = auth.onAuthStateChanged((userAuth) => {
+      unsubcribe();
+      resolve(userAuth);
+    }, reject);
+  });
+};
 export const auth = firebase.auth();
 export const firestore = firebase.firestore();
 
