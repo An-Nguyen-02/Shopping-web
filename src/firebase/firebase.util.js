@@ -11,7 +11,7 @@ const config = {
   appId: "1:557901990822:web:e80b97c2f65416dd7e1d67",
   measurementId: "G-8401HR1MNF",
 };
-
+firebase.initializeApp(config);
 export const createUserProfileDocument = async (userAuth, additionaldata) => {
   if (!userAuth) return;
 
@@ -61,13 +61,11 @@ export const convertCollectionsSnapshotToMap = (collections) => {
   }, {});
 };
 
-firebase.initializeApp(config);
-
 export const auth = firebase.auth();
 export const firestore = firebase.firestore();
 
-const provider = new firebase.auth.GoogleAuthProvider();
-provider.setCustomParameters({ prompt: "select_account" });
-export const signInWithGoogle = () => auth.signInWithPopup(provider);
+export const googleProvider = new firebase.auth.GoogleAuthProvider();
+googleProvider.setCustomParameters({ prompt: "select_account" });
+export const signInWithGoogle = () => auth.signInWithPopup(googleProvider);
 
 export default firebase;
