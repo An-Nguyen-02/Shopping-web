@@ -1,4 +1,4 @@
-import "./App.css";
+import "./App.scss";
 import { Route, Switch, Redirect } from "react-router-dom";
 import Homepage from "../pages/Homepage/Homepage.js";
 import ShopPage from "../pages/Shop/shop.js";
