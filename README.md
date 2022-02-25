@@ -14,6 +14,7 @@ My purpose is to study from this the basic concept of building a full functional
 - Use Firestore to have information of the items in shop
 - Have basic token management by user authentication (but when user sign out and sign in again, it refresh)
 - Used Redux for scalability.
+- Deployed on Heroku.
 
 ## How to use
 
