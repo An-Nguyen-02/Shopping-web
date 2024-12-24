@@ -14,7 +14,7 @@ My purpose is to study from this the basic concept of building a full functional
 - Use Firestore to have information of the items in shop
 - Have basic token management by user authentication (but when user sign out and sign in again, it refresh)
 - Used Redux for scalability.
-- Deployed on Heroku.
+- Deployed on Netlify.
 
 ## How to use
 
@@ -23,3 +23,6 @@ My purpose is to study from this the basic concept of building a full functional
 - Then set a `.env` file in the root directory and add in the **STRIPE_SECRET_KEY** which link to your stripe account.
 - Then run `npm install` to have all the packages
 - Then run `npm start`. Enjoy :smiley: .
+
+## Note
+- Stripe payment is not working properly due to change in folder strucutre to deploy on Netlify. I'm currently resolving this issue
