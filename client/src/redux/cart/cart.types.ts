@@ -6,4 +6,11 @@ const enum CartActionTypes {
   CLEAR_CART = "CLEAR_CART",
 };
 
+export type CartItem = {
+  id: number;
+  imageUrl: string;
+  name: string;
+  price: number
+}
+
 export default CartActionTypes;
